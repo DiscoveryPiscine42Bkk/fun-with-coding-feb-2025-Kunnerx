@@ -1,0 +1,6 @@
+body {text-align: center;margin: 0;padding: 50px;}
+
+button {padding: 15px 30px;font-size: 18px;font-weight: bold;color: white;
+    background-color: #68f35c;border: none;border-radius: 5px;cursor: pointer;}
+
+button:hover {background-color: #fdec00;}
