@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="project.css">
+   
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                
+              
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+             
+                    <ul class="navlinks">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="rap.html">About Me</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="skill.html">Skill</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+          <div class="block">                
+
+            <div class="container">
+                <div class="hero-text">
+                    <h1 style="color: black;">PROJECT</h1>
+
+                </div>
+           </div>
+           <div class="container">
+                <div class="hero-text">
+                    <h1 style="color: rgb(219, 133, 35);">Project Datamining</h1>
+                    <p>Cleaning and Analyzing data of chocolate bar rating and visualize into a graph.</p>
+            </div>   
+         </div>
+         <div class="container">
+            <div class="hero-text">
+                <h1 style="color: rgb(219, 133, 35);">Project Database</h1>
+              <p>Create a website for selling shirts using a database to store data with xampp by using SQL,PYTHON,JAVA and HTML.</p>
+             </div>   
+        </div>
+        <div class="container">
+            <div class="hero-text">
+                <h1 style="color: rgb(219, 133, 35);">Project Analyzing traffic problems in Bangkok</h1>
+              <p>Analyze and visualize by using MINITAB and POWER BI to propose guidelines for solving problems such as using public transportation.</p>
+             </div>   
+        </div><div class="container">
+            <div class="hero-text">               
+             </div>   
+        </div>
+        
+          </div>
+       </div>
+               
+        </div>
+     </div>
+    
+   
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    var togglebtn = document.querySelector(".togglebtn");
+    var nav = document.querySelector(".navlinks");
+
+    if (togglebtn && nav) {
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+    }
+    });
+ 
+    </script>
+
+
+</body>
+</html>

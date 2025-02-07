@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+}
+
+
+.hero-header{
+    width:100%;
+    height: 100%;
+    min-height: 100vh;
+    background: url('bg2.gif') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.wrapper{
+    width:1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    width: 100%;
+    padding: 40px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: 1000;
+
+}
+
+
+
+nav .navlinks{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+     color:#e5e5e5;
+     margin-right: 2.5rem;
+     display: inline-block;
+     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+nav .navlinks li a:hover{
+    transform: scale(1.1) translateY(-5px);
+    color:#2b8eeb; 
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:4rem;
+}
+.container .hero-pic{
+    margin-top: 150px;
+    width: auto;
+    height: auto;
+  
+}
+
+
+.hero-pic img{
+    height: 100%;
+    width:100%;
+    transition: 0.5s;
+}
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+.hero-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+.hero-text h5{
+    color:#e5e5e5;
+    font-size: 14px;
+}
+
+
+.hero-text h5 span{
+    color:#007ced;
+    font-size: 16px;
+}
+.hero-text h1{
+    color: #007ced;
+    font-size: 3rem;
+}
+.hero-text p{
+    color:#e5e5e5;
+
+}
+
+
+.hero-text .social i{
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 300px;
+    transition: 0.5s;
+}
+.hero-text .social i:hover{
+    color:#007ced;
+    transform: rotate(360deg);
+}
+
+/* Respnosiv design & displaying navbar for small screen */
+@media(max-width:930px)
+{   
+}
+@media(max-width:768px)
+{
+    .container{
+        flex-direction: column;
+        padding-top:2rem
+    }
+    .hero-text{
+        padding:40px 0px;
+    }
+}
+
+
+.social {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: fixed;
+    left: 90px; 
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100; 
+}
+
+.social i {
+    display: inline-block;
+    font-size: 23px;
+    margin: 20px 0; 
+    transition: transform 0.6s, color 0.6s;
+    text-shadow: black 1px 1px 10px;
+    color: rgb(255, 255, 255);
+}
+
+.social i:hover {
+    transform: rotate(360deg);
+    animation: rgbText 2s infinite linear;
+}
+
+
+
+
+@media (max-width: 930px) {
+    .social {
+        display: none;
+    }
+}
+
+
+
+.head-text{
+    color: #e5e5e5;
+    font-size: 2rem;;
+    text-align: center;
+}
+
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    margin-top: 40px;
+    font-size: 50px; 
+    font-style: normal;
+    text-align: center; 
+    animation: rgbText 2s infinite linear;
+    text-shadow: black 6px 4px 2px;
+}
+
+@keyframes rgbText {
+    0% { color: rgb(255, 0, 0); }   
+    25% { color: rgb(0, 255, 0); } 
+    50% { color: rgb(0, 0, 255); }  
+    75% { color: rgb(255, 255, 0); }
+    100% { color: rgb(255, 0, 0); } 
+}
+
+@media (max-width:930px) { 
+    .press-start-2p-regular {
+        font-size: 6vw;
+    }
+}

@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+}
+
+
+.hero-header{
+    width:100%;
+    height: 100%;
+    min-height: 200vh;
+    background: url('./pic/bg2.gif') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.wrapper{
+    width:1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    width: 100%;
+    padding: 40px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+}
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 50px; 
+    margin-bottom: 40px; 
+}
+
+
+.container .hero-pic{
+   margin-top: 200px;
+    width: 300px;
+    height: 300px;  
+}
+
+
+
+.hero-pic img{
+    height: auto;
+    width:100%;
+    transition: 0.5s;
+}
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+@media (max-width: 768px) {
+    .container .hero-pic {
+        width: 100vw; 
+        height: 100vw; 
+    }
+}
+
+
+.hero-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+.hero-text h5{
+    color:#e5e5e5;
+    font-size: 20px;
+}
+
+/* dlete */
+.hero-text h5 span{
+    color:#ffffff;
+    font-size: 20px;
+}
+/* dle */
+.hero-text h1{
+    color: #007ced;
+    font-size: 40px;
+}
+.hero-text p{
+    color:#e5e5e5;
+    font-size: 15px;
+
+}
+
+
+.hero-text .social i{
+    color: #e5e5e5;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.hero-text .social i:hover{
+    color:#007ced;
+    transform: rotate(360deg);
+}
+
+@media(max-width:768px)
+{
+    .container{
+        
+        font-size: 6vw;
+        flex-direction: column;
+        padding:2rem
+    }
+    .hero-text{
+        font-size: 6vw;
+    }
+}
+
+
+/* nav */
+nav .navlinks{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+     color:#000000;
+     margin-right: 2.5rem;
+     display: inline-block;
+     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+nav .navlinks li a:hover{
+    transform: scale(1.1) translateY(-5px);
+    color:#f80101; 
+}
+/* Respnosiv navv */
+@media (max-width: 930px) {
+    /* Ensure the toggle button is visible */
+    nav .togglebtn {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 35px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    nav .togglebtn span {
+        display: block;
+        background-color: #007ced;
+        margin: 5px 0;
+        width: 30px;
+        height: 3px;
+        transition: 0.3s;
+    }
+
+    /* Style for toggle button animation when clicked */
+    .click span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .click span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .click span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Fix the navigation menu */
+    nav .navlinks {
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        width: 60%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: right 0.5s ease-in-out;
+        z-index: 9;
+    }
+
+    /* Open state for menu */
+    nav .navlinks.open {
+        right: 0;
+    }
+
+    /* Ensure nav links are centered */
+    nav .navlinks li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    nav .navlinks li a {
+        color: white;
+        font-size: 1.2rem;
+        text-decoration: none;
+        display: block;
+    }
+}
+
+
+
+/* end nav res */
+
+.social {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    position: fixed; 
+    left: 20px; 
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.social i {
+    display: inline-block; 
+    color: #e5e5e5;
+    font-size: 23px;
+    margin: 20px 0; 
+    transition: transform 0.6s, color 0.6s;
+}
+
+.social i:hover {
+    transform: rotate(360deg); 
+    color: rgb(25, 134, 223);
+}
+
+@media (max-width: 930px) {
+    .social {
+        display: none;
+    }
+}
+
+

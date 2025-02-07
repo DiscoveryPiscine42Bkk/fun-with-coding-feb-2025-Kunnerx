@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="skill.css">
+   
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                
+              
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+             
+                    <ul class="navlinks">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="rap.html">About Me</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="skill.html">Skill</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+          <div class="block">
+                
+            <div class="container">
+                 <div class="social">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-steam"></i></a>
+                 </div>
+            </div>
+
+            <div class="container">
+                <div class="hero-text">
+                    <h1 style="color: rgb(0, 0, 0);">SKILL</h1>
+
+                </div>
+           </div>
+
+            <div class="container">
+                 
+                <div class="hero-pic">
+                    <img src="./pic/minitab.png" alt="minitab">
+                    
+                 </div>
+                               
+                 <div class="hero-text">
+                    <h1 style="color: rgb(63, 199, 74);">Minitab</h1>
+
+                
+                </div>
+                <div class="hero-pic">
+                    <img src="./pic/spss.png" alt="spss">
+                    
+                 </div>              
+                 <div class="hero-text">
+                    <h1 style="color: rgb(84, 86, 255);">SPSS</h1>
+
+                 
+                </div>
+                <div class="hero-pic">
+                    <img src="./pic/powerbi.png" alt="powerbi">
+                    
+                 </div>              
+                 <div class="hero-text">
+                    <h1 style="color: rgb(221, 240, 51);">Powerbi</h1>
+
+                
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="hero-text">
+                    <h1 style="color: rgb(0, 0, 0);">CERTIFICATE</h1>
+
+                </div>
+           </div>
+           <div class="container">
+            <div class="hero-pic2">
+                <img src="./pic/cer1.png" alt="cer1">                    
+            </div>            
+            <div class="hero-pic2">
+                <img src="./pic/cer2.png" alt="cer2">               
+             </div>
+             <div class="hero-pic2">
+                <img src="./pic/cer3.jpg" alt="cer3">           
+             </div>
+                     
+           </div>
+     
+          </div>
+       </div>
+               
+        </div>
+     </div>
+    
+   
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    var togglebtn = document.querySelector(".togglebtn");
+    var nav = document.querySelector(".navlinks");
+
+    if (togglebtn && nav) {
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+    }
+    });
+ 
+    </script>
+
+
+</body>
+</html>

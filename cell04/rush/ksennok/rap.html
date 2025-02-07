@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="rap.css">
+  
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                
+              
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+             
+                    <ul class="navlinks">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="rap.html">About Me</a></li>
+                        <li><a href="Education.html">Education</a></li>
+                        <li><a href="skill.html">Skill</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">                 
+
+                 <div class="hero-pic">
+                    <img src="./pic/rap.png" alt="profile pic">
+                 </div>
+                 
+                 <div class="hero-text">
+                    <h5>Hi I'm </h5>
+                    <h1>KRID SENNOK</h1>
+                    <p> I am 21 years old. I am currently studying at King Mongkut's Institute of Technology Ladkrabang (KMITL) in the Faculty of Science, majoring in Applied Statistics and Data Analytics. 
+                    </p>
+
+
+                 
+                 </div>
+            </div>
+        </div>
+     </div>
+    
+   
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    var togglebtn = document.querySelector(".togglebtn");
+    var nav = document.querySelector(".navlinks");
+
+    if (togglebtn && nav) {
+        togglebtn.addEventListener("click", function() {
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+    }
+    });
+ 
+    </script>
+
+
+</body>
+</html>
